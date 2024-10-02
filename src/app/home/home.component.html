@@ -1,0 +1,10 @@
+<div>
+    <button (click)="toggleBanner()">
+        {{ showBanner ? 'Ocultar Banner' : 'Mostrar Banner' }}
+    </button>
+
+  
+    <div *ngIf="showBanner">
+        <img src="https://picsum.photos/200/300" alt="Banner Promocional" style="width: 1300px; height: 600px;">
+    </div>
+</div>
